@@ -1,0 +1,8 @@
+@import '../../sass-modules/lengths';
+
+.container {
+  padding-left: $side-padding;
+  padding-right: $side-padding;
+  max-width: $max-width;
+  margin: 0 auto;
+}
