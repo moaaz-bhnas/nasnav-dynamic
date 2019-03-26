@@ -1,0 +1,74 @@
+@import '../../sass-modules/breakpoints';
+@import '../../sass-modules/lengths';
+
+.header__imageContainer {
+  @media screen and (min-width: $break-header) {
+    display: inline-block;
+  }
+}
+
+// modifiers
+.header__content_widthOnLargeViewport_half {
+  @media screen and (min-width: $break-header) {
+    width: 50%;
+  }
+}
+.header__content_widthOnLargeViewport_lessThanHalf {
+  @media screen and (min-width: $break-header) {
+    width: 38%;
+  }
+}
+
+/* ===========================================
+Home
+============================================== */
+.home {
+  .header__imageContainer {
+    position: relative;
+    z-index: 1;
+  }
+
+  .header__image {
+    &:first-child {
+      width: 60%;
+
+      @media screen and (min-width: $break-header) {
+        position: absolute;
+        top: 13rem;
+        right: 5.8rem;
+        width: 30rem;
+      }
+      
+      @media screen and (min-width: $break-header2) {
+        top: 8rem;
+        right: calc((-100vw + #{$max-width}) / 2 + 6rem);
+        width: 37.5rem;
+      }
+
+      @media screen and (min-width: $break-header3) {
+        top: 5rem;
+      }
+    }
+
+    &:last-child {
+      width: 40%;
+
+      @media screen and (min-width: $break-header) {
+        position: absolute;
+        top: 8rem;
+        right: -10rem;
+        width: 20rem;
+      }
+      
+      @media screen and (min-width: $break-header2) {
+        top: 1.5rem;
+        right: calc((-100vw + #{$max-width}) / 2 - 13.5rem);
+        width: 25rem;
+      }
+
+      @media screen and (min-width: $break-header3) {
+        top: -1.5rem;
+      }
+    }
+  }
+}

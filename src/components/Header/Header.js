@@ -3,12 +3,13 @@ import Topbar from './Topbar';
 import curve from '../../image/curve-cropped.png';
 import './Header.scss';
 import HeaderContent from './HeaderContent';
+import HeaderImage from './HeaderImage';
 
 const Header = (props) => {
-  const {overflowHidden, contentWidthClass, text} = props;
+  const {pageName, overflowHidden, contentWidthClass, text, imageWidthClass, images} = props;
   return (
     <header 
-      className="header App__header" 
+      className={`header ${pageName} App__header`} 
       role="banner" 
       style={{overflow: overflowHidden ? 'hidden' : null}}
     >
@@ -16,10 +17,13 @@ const Header = (props) => {
         <h1 className="header__title">NasNav</h1>
         <Topbar />
         <HeaderContent 
-          contentWidthClass={contentWidthClass}
+          widthClass={contentWidthClass}
           text={text}
         />
-        {/* {props.headerImage} */}
+        <HeaderImage 
+          widthClass={imageWidthClass}
+          images={images}
+        />
       </div>
       <img 
         className="header__curve" 
