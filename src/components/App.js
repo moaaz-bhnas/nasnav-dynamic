@@ -8,6 +8,8 @@ import '../sass-basic-components/Image.scss';
 import '../sass-basic-components/Paragraph.scss';
 import '../sass-basic-components/Logo.scss';
 import '../sass-basic-components/Link.scss';
+import CountrySection from './countries/CountrySection';
+import Footer from './footer/Footer';
 
 class App extends Component {
   render() {
@@ -17,6 +19,8 @@ class App extends Component {
           <Switch>
             <Route exact path="/" component={HomePage} />
           </Switch>
+          <CountrySection />
+          <Footer />
         </div>
       </HashRouter>
     );

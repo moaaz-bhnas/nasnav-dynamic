@@ -11,7 +11,6 @@ $break-sidebar-large: 31.25rem;
 
 /* desktop navigation menu --- */
 $break-large: 65rem;
-// $break-xlarge: 75.125rem;
 
 /* ===============================
 Paragraph
@@ -28,9 +27,20 @@ Service
 ================================== */
 $break-service: 69.25rem;
 
-// $break-countries: 28.5625rem;
-// $break-footer: 34.375em;
-// $break-jumbotron: 36.25rem;
+/* ===============================
+Countries
+================================== */
+$break-countries: 28.5625rem;
+$break-modal-med: 43.375rem;
+$break-modal-large: 69.875rem;
+
+/* ===============================
+Footer
+================================== */
+$break-footer: 34.375em;
+
+
+
 // $break-modal-med: 43.375rem;
 // $break-modal-large: 69.875rem;
 // $break-service: 69.25rem;
