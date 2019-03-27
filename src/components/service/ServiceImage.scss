@@ -48,11 +48,11 @@ Service Image Container
 //     margin: 0 auto 2rem;
 //   }
 // }
-// .service__imageContainer_width_lessThanHalf {
-//   @media screen and (min-width: $break-service) {
-//     width: 40%;
-//   }
-// }
+.service__imageContainer_widthOnlargeScreen_lessThanHalf {
+  @media screen and (min-width: $break-service) {
+    width: 40%;
+  }
+}
 .service__imageContainer_widthOnlargeScreen_half {
   @media screen and (min-width: $break-service) {
     width: 50%;

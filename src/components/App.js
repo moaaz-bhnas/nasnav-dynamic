@@ -11,6 +11,7 @@ import '../sass-basic-components/Link.scss';
 import CountrySection from './countries/CountrySection';
 import Footer from './footer/Footer';
 import NavboxPage from './NavboxPage/NavboxPage';
+import NavstylePage from './NavstylePage/NavstylePage';
 
 class App extends Component {
   render() {
@@ -20,6 +21,7 @@ class App extends Component {
           <Switch>
             <Route exact path="/" component={HomePage} />
             <Route exact path="/navbox" component={NavboxPage} />
+            <Route exact path="/navstyle" component={NavstylePage} />
           </Switch>
           <CountrySection />
           <Footer />

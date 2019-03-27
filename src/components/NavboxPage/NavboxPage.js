@@ -149,7 +149,7 @@ const NavboxPage = () => {
         {text: 'Download PDF', backgroundColor: 'blue'},
         {text: 'Live Demo', backgroundColor: 'green'}
       ]
-    },
+    }
   ];
   return (
     <React.Fragment>
@@ -160,12 +160,14 @@ const NavboxPage = () => {
         text={header.text}
         images={header.images}
       />
-      <Thriller paragraphs={thriller.paragraphs} />
-      <HowItWorksList />
-      <ServiceSection 
-        pageName={pageName}
-        services={services} 
-      />
+      <div className="container">
+        <Thriller paragraphs={thriller.paragraphs} />
+        <HowItWorksList />
+        <ServiceSection 
+          pageName={pageName}
+          services={services} 
+        />
+      </div>
     </React.Fragment>
   );
 }

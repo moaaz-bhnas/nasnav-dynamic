@@ -14,7 +14,7 @@ const HeaderContent = (props) => {
             <strong>{paragraph1.slice(1, paragraph1.lastIndexOf('*'))}</strong>
             {paragraph1.slice(paragraph1.lastIndexOf('*')+1)}
           </React.Fragment> :
-          paragraph2
+          paragraph1
         }
       </p>
       <p className="paragraph header__paragraph paragraph_line_high paragraph_color_white paragraph_weight_med">
