@@ -160,14 +160,12 @@ const NavboxPage = () => {
         text={header.text}
         images={header.images}
       />
-      <div className="container">
-        <Thriller paragraphs={thriller.paragraphs} />
-        <HowItWorksList />
-        <ServiceSection 
-          pageName={pageName}
-          services={services} 
-        />
-      </div>
+      <Thriller paragraphs={thriller.paragraphs} />
+      <HowItWorksList />
+      <ServiceSection 
+        pageName={pageName}
+        services={services} 
+      />
     </React.Fragment>
   );
 }

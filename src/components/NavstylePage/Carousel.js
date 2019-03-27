@@ -9,17 +9,19 @@ const Carousel = () => {
   const images = [image1, image2, image3];
   return (
     <div className="carousel">
-      <img src={arrow} alt="Left arrow" className="carousel__leftArrow"/>
-      <ul className="list carousel__list">
-        {
-          images.map((image) => (
-            <li key={image} className="carousel__item">
-              <img src={image} alt="Fancy website built with NasNav web builder" className="image image_size_full carousel__image"/>
-            </li>
-          ))
-        }
-      </ul>
-      <img src={arrow} alt="Right arrow" className="carousel__rightArrow"/>
+      <div className="container">
+        <img src={arrow} alt="Left arrow" className="carousel__leftArrow"/>
+        <ul className="list carousel__list">
+          {
+            images.map((image) => (
+              <li key={image} className="carousel__item">
+                <img src={image} alt="Fancy website built with NasNav web builder" className="image image_size_full carousel__image"/>
+              </li>
+            ))
+          }
+        </ul>
+        <img src={arrow} alt="Right arrow" className="carousel__rightArrow"/>
+      </div>
     </div>
   );
 }

@@ -69,14 +69,16 @@ const FeatureSection = () => {
 
   return (
     <section className="FeatureSection" role="region" aria-labelledby="featureSection__title">
-      <h2 className="featureSection__title" id="featureSection__title">Features</h2>
-      <ul className="list featureList">
-        {
-          features.map((feature) => (
-            <Feature featureData={feature} />
-          ))
-        }
-      </ul>
+      <div className="container">
+        <h2 className="featureSection__title" id="featureSection__title">Features</h2>
+        <ul className="list featureList">
+          {
+            features.map((feature) => (
+              <Feature key={feature.title} featureData={feature} />
+            ))
+          }
+        </ul>
+      </div>
     </section>
   );
 }

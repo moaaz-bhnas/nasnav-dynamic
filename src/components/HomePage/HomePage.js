@@ -385,13 +385,11 @@ const HomePage = () => {
         text={header.text}
         images={header.images}
       />
-      <div className="container">
-        <About />
-        <ServiceSection 
-          pageName={pageName}
-          services={services} 
-        />
-      </div>
+      <About />
+      <ServiceSection 
+        pageName={pageName}
+        services={services} 
+      />
     </React.Fragment>
   );
 }

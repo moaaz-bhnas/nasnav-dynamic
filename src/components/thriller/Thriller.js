@@ -6,18 +6,20 @@ const Thriller = (props) => {
 
   return (
     <div className="thriller">
-      <p className="paragraph paragraph_size_large paragraph_align_center thriller__paragraph">
-        {paragraph1}
-      </p>
-      <p className="paragraph paragraph_line_high paragraph_align_center paragraph_color_grey paragraph_size_medSmall thriller__paragraph">
-        {paragraph2}
-      </p>
-      {
-        paragraph3 && 
-        <p className="paragraph paragraph_line_high paragraph_align_center paragraph_shortened_large thriller__paragraph">
-          {paragraph3}
+      <div className="container">
+        <p className="paragraph paragraph_size_large paragraph_align_center thriller__paragraph">
+          {paragraph1}
         </p>
-      }
+        <p className="paragraph paragraph_line_high paragraph_align_center paragraph_color_grey paragraph_size_medSmall thriller__paragraph">
+          {paragraph2}
+        </p>
+        {
+          paragraph3 && 
+          <p className="paragraph paragraph_line_high paragraph_align_center paragraph_shortened_large thriller__paragraph">
+            {paragraph3}
+          </p>
+        }
+      </div>  
     </div>
   );
 }
