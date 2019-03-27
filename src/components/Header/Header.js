@@ -6,10 +6,10 @@ import HeaderContent from './HeaderContent';
 import HeaderImage from './HeaderImage';
 
 const Header = (props) => {
-  const {pageName, overflowHidden, contentWidthClass, text, imageWidthClass, images} = props;
+  const {pageName, overflowHidden, contentWidth, text, imageWidth, images} = props;
   return (
     <header 
-      className={`header ${pageName} App__header`} 
+      className={`header ${pageName}Page App__header`} 
       role="banner" 
       style={{overflow: overflowHidden ? 'hidden' : null}}
     >
@@ -17,11 +17,11 @@ const Header = (props) => {
         <h1 className="header__title">NasNav</h1>
         <Topbar />
         <HeaderContent 
-          widthClass={contentWidthClass}
+          width={contentWidth}
           text={text}
         />
         <HeaderImage 
-          widthClass={imageWidthClass}
+          width={imageWidth}
           images={images}
         />
       </div>
@@ -29,8 +29,7 @@ const Header = (props) => {
         className="header__curve" 
         src={curve} alt="" 
         aria-hidden="true" 
-        style={{zIndex: overflowHidden ? 1 : null}} 
-      />
+      /> {/* style={{zIndex: overflowHidden ? 1 : null}}  */}
     </header>
   );
 }
