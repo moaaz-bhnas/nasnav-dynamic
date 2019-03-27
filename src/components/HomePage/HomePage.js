@@ -386,7 +386,10 @@ const HomePage = () => {
         images={header.images}
       />
       <About />
-      <ServiceSection services={services} />
+      <ServiceSection 
+        pageName={pageName}
+        services={services} 
+      />
     </React.Fragment>
   );
 }

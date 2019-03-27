@@ -10,6 +10,7 @@ import '../sass-basic-components/Logo.scss';
 import '../sass-basic-components/Link.scss';
 import CountrySection from './countries/CountrySection';
 import Footer from './footer/Footer';
+import NavboxPage from './NavboxPage/NavboxPage';
 
 class App extends Component {
   render() {
@@ -18,6 +19,7 @@ class App extends Component {
         <div className="App">
           <Switch>
             <Route exact path="/" component={HomePage} />
+            <Route exact path="/navbox" component={NavboxPage} />
           </Switch>
           <CountrySection />
           <Footer />
