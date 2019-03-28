@@ -121,3 +121,33 @@ Navstyle Page
     }
   }
 }
+
+/* ===========================================
+Shopping Page
+============================================== */
+.shoppingPage {
+  &.header {
+    overflow: hidden;
+  }
+
+  .header__imageContainer {
+    text-align: center;
+    position: relative;
+
+    @media screen and (min-width: $break-xlarge) {
+      text-align: left;
+    }
+  }
+
+  .header__image {
+    width: 100%;
+    max-width: 30.4rem;
+
+    @media screen and (min-width: $break-xlarge) {
+      max-width: none;
+      position: absolute;
+      right: -4rem;
+      width: 52vw;
+    }
+  }
+}

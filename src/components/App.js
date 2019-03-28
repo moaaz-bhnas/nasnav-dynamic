@@ -12,6 +12,7 @@ import CountrySection from './countries/CountrySection';
 import Footer from './footer/Footer';
 import NavboxPage from './NavboxPage/NavboxPage';
 import NavstylePage from './NavstylePage/NavstylePage';
+import ShoppingPage from './ShoppingPage.js/ShoppingPage';
 
 class App extends Component {
   render() {
@@ -20,8 +21,9 @@ class App extends Component {
         <div className="App">
           <Switch>
             <Route exact path="/" component={HomePage} />
-            <Route exact path="/navbox" component={NavboxPage} />
-            <Route exact path="/navstyle" component={NavstylePage} />
+            <Route path="/navbox" component={NavboxPage} />
+            <Route path="/navstyle" component={NavstylePage} />
+            <Route path="/shopping" component={ShoppingPage} />
           </Switch>
           <CountrySection />
           <Footer />

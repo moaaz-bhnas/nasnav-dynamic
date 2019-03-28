@@ -6,7 +6,7 @@ import './ServiceContent.scss';
 const Service = (props) => {
   const {name, imageContainers, contentClasses, paragraphs, steps, buttons} = props.serviceData;
   const [imageContainer1, imageContainer2] = imageContainers;
-  const [paragraph1, paragraph2, paragraph3] = paragraphs;
+  const [paragraph1, paragraph2, paragraph3, paragraph4] = paragraphs;
 
   return (
     <article className={`service ${name}`} role="article">
@@ -39,6 +39,12 @@ const Service = (props) => {
         <p className="paragraph paragraph_color_grey paragraph_line_high">
           {paragraph3}
         </p>
+        {
+          paragraph4 &&
+          <p className="paragraph paragraph_color_grey paragraph_line_high">
+            {paragraph4}
+          </p>
+        }
         {
           steps &&
           <ul className="list stepList">

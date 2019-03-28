@@ -9,7 +9,7 @@ const Carousel = () => {
   const images = [image1, image2, image3];
   return (
     <div className="carousel">
-      <div className="container">
+      <div className="container carousel__container">
         <img src={arrow} alt="Left arrow" className="carousel__leftArrow"/>
         <ul className="list carousel__list">
           {

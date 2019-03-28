@@ -58,11 +58,11 @@ Service Image Container
     width: 50%;
   }
 }
-// .service__imageContainer_width_overHalf {
-//   @media screen and (min-width: $break-service) {
-//     width: 55%;
-//   }
-// }
+.service__imageContainer_widthOnlargeScreen_overHalf {
+  @media screen and (min-width: $break-service) {
+    width: 55%;
+  }
+}
 // .service__imageContainer_width_third {
 //   @media screen and (min-width: $break-service) {
 //     width: 30vw;
@@ -105,6 +105,9 @@ Service Image
 .service__image_style_normal {
   width: 100%;
   max-width: 32.25rem;
+  @media screen and (min-width: $break-service) {
+    max-width: initial;
+  }
 }
 .service__image_extend_left {
   width: 100%;
@@ -117,4 +120,7 @@ Service Image
     position: absolute;
     right: 0;
   }
+}
+.service__image_movedOnlargeScreen_up {
+  margin-top: -4rem;
 }
