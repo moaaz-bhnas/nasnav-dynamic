@@ -3,6 +3,8 @@ import Header from '../header/Header';
 import Thriller from '../thriller/Thriller';
 import ServiceSection from '../service/ServiceSection';
 import styles from '../../image/styles-image.png';
+import serviceImage1 from '../../image/styles-image2.png';
+import serviceImage2 from '../../image/styles-image3.png';
 import Carousel from './Carousel';
 import './NavstylePage.scss';
 import FeatureSection from './FeatureSection';
@@ -39,7 +41,7 @@ const NavstylePage = () => {
           ],
           images: [
             {
-              src: styles,
+              src: serviceImage1,
               alt: 'multiple screens showing various styles',
               classes: [
                 'service__image'
@@ -81,7 +83,7 @@ const NavstylePage = () => {
           ],
           images: [
             {
-              src: styles,
+              src: serviceImage2,
               alt: 'multiple screens showing various styles',
               classes: [
                 'service__image',

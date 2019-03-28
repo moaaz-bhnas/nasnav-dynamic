@@ -1,10 +1,12 @@
 import React from 'react';
+import './ServiceWithoutImage.scss';
 
 const ServiceWithoutImage = (props) => {
+  const {name} = props.serviceData;
   const [paragraph1, paragraph2] = props.serviceData.paragraphs;
   return (
-    <div className={`service`}>
-    <p className="paragraph navstyles__serviceParagraph paragraph_line_high paragraph_size_large paragraph_align_center paragraph_shortened_large paragraph_centered">
+    <div className={`serviceWithoutImage ${name}`}>
+    <p className="paragraph serviceWithoutImage__paragraph navstyles__serviceParagraph paragraph_line_med paragraph_size_large paragraph_align_center paragraph_shortened_large paragraph_centered">
         {
           paragraph1.includes('*') ?
           <React.Fragment>

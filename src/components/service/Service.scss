@@ -94,14 +94,25 @@ Styles
 
     @media screen and (min-width: $break-service) {
       max-width: initial;
-      width: 55vw;
+      width: 67vw;
       margin-left: calc((-100vw + #{$max-width})/2 - 1.5rem);
     }
   }
 
   .service__content {
     @media screen and (min-width: $break-service) {
-      margin-top: 35rem; 
+      margin-top: 26rem; 
+    }
+  }
+}
+
+.styles4 {
+  .service__image {
+    @media screen and (min-width: $break-service) {
+      position: absolute;
+      top: 0;
+      left: -5rem;
+      width: 141%; 
     }
   }
 }
