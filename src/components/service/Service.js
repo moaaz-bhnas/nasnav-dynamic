@@ -23,6 +23,7 @@ const Service = (props) => {
         }
       </div>
       <div className={`service__content ${contentClasses.join(' ')}`}>
+        <h3 className="service__title">{name}</h3>
         <p className="paragraph paragraph_color_grey">
           {paragraph1}
         </p>

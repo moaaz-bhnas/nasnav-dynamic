@@ -2,6 +2,7 @@ import React from 'react';
 import Service from './Service';
 import './ServiceSection.scss';
 import ServiceWithoutImage from './ServiceWithoutImage';
+import PaymentOptions from './PaymentOptions';
 
 const ServiceSection = (props) => {
   const {pageName, services} = props;
@@ -14,6 +15,8 @@ const ServiceSection = (props) => {
             services.map((service) => (
               <li key={service.name} className="serviceList__item">
                 {
+                  service.paymentMethods ?
+                  <PaymentOptions /> :
                   service.textOnly ?
                   <ServiceWithoutImage serviceData={service} /> :
                   <Service serviceData={service} />

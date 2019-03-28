@@ -5,6 +5,7 @@ import Header from '../header/Header';
 import serviceImage1 from '../../image/dashboard-image2.png';
 import serviceImage2 from '../../image/dashboard-image3.png';
 import serviceImage3 from '../../image/dashboard-image4.png';
+import serviceImage4 from '../../image/dashboard-image7.png';
 import ServiceSection from '../service/ServiceSection';
 
 const DashboardPage = () => {
@@ -94,7 +95,7 @@ const DashboardPage = () => {
       ]
     },
     {
-      name: 'editor2',
+      name: 'dashboard4',
       imageContainers: [
         {
           classes: [
@@ -121,6 +122,42 @@ const DashboardPage = () => {
       paragraphs: [
         'Nasnav easy and fast',
         'Control the display of your panoramas in your site !',
+        'Sed mollitia ea. Debitis quaerat odit voluptatum consequatur soluta vero. Soluta accusantium dolorem dolor sint quia ut. Consequuntur et repudiandae.',
+        'Non iure asperiores dolorum quibusdam. Omnis fugit itaque dolores quo. Eos aut error facilis eum enim aperiam quo.'
+      ]
+    },
+    {
+      name: 'payment',
+      paymentMethods: true
+    },
+    {
+      name: 'dashboard5',
+      imageContainers: [
+        {
+          classes: [
+            'service__imageContainer_widthOnlargeScreen_half',
+            'service__imageContainer_floatOnlargeScreen_left',
+            'service__imageContainer_imagePositionOnSmallScreen_center'
+          ],
+          images: [
+            {
+              src: serviceImage4,
+              alt: 'NasNav dashboard',
+              classes: [
+                'service__image',
+                'service__image_style_normal'
+              ]
+            }
+          ]
+        }
+      ],
+      contentClasses: [
+        'service__content_widthOnlargeScreen_45',
+        'service__content_floatOnlargeScreen_right'
+      ],
+      paragraphs: [
+        'Nasnav easy and fast',
+        'Manage your company branches easily',
         'Sed mollitia ea. Debitis quaerat odit voluptatum consequatur soluta vero. Soluta accusantium dolorem dolor sint quia ut. Consequuntur et repudiandae.',
         'Non iure asperiores dolorum quibusdam. Omnis fugit itaque dolores quo. Eos aut error facilis eum enim aperiam quo.'
       ]
