@@ -11,7 +11,7 @@
   position: relative;
 
   @media screen and (min-width: $break-header) {
-    padding-bottom: 11rem;
+    padding-bottom: 9rem;
   }
 }
 
@@ -50,4 +50,13 @@
   bottom: 0;
   left: 0;
   right: 0;
+}
+
+/* ================================
+Navstyles 
+=================================== */
+.navstylePage.App__header {
+  @media screen and (min-width: $break-xlarge) {
+    margin-bottom: 10%;
+  }
 }

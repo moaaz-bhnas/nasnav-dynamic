@@ -12,7 +12,8 @@ import CountrySection from './countries/CountrySection';
 import Footer from './footer/Footer';
 import NavboxPage from './NavboxPage/NavboxPage';
 import NavstylePage from './NavstylePage/NavstylePage';
-import ShoppingPage from './ShoppingPage.js/ShoppingPage';
+import ShoppingPage from './ShoppingPage/ShoppingPage';
+import Editor360Page from './Editor360Page/Editor360Page';
 
 class App extends Component {
   render() {
@@ -24,6 +25,7 @@ class App extends Component {
             <Route path="/navbox" component={NavboxPage} />
             <Route path="/navstyle" component={NavstylePage} />
             <Route path="/shopping" component={ShoppingPage} />
+            <Route path="/360editor" component={Editor360Page} />
           </Switch>
           <CountrySection />
           <Footer />

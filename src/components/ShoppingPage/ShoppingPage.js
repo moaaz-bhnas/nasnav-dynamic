@@ -44,7 +44,7 @@ const ShoppingPage = () => {
               classes: [
                 'service__image',
                 'service__image_style_normal',
-                'service__image_movedOnlargeScreen_up'
+                'service__image_upOnlargeScreen_high'
               ]
             }
           ]
@@ -79,7 +79,7 @@ const ShoppingPage = () => {
               classes: [
                 'service__image',
                 'service__image_style_normal',
-                'service__image_movedOnlargeScreen_up'
+                'service__image_upOnlargeScreen_high'
               ]
             }
           ]
@@ -122,7 +122,7 @@ const ShoppingPage = () => {
               classes: [
                 'service__image',
                 'service__image_style_normal',
-                'service__image_movedOnlargeScreen_up'
+                'service__image_upOnlargeScreen_high'
               ]
             }
           ]
