@@ -6,7 +6,11 @@
       to top right, 
       #8249F0, #119DEA
     );
-  background: url('../../image/background.png') no-repeat 50% 50% / cover;
+  background-image: url('../../image/background.png');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+
 
   position: relative;
 
@@ -59,4 +63,11 @@ Navstyles
   @media screen and (min-width: $break-xlarge) {
     margin-bottom: 10%;
   }
+}
+
+/* ================================
+Dashboard 
+=================================== */
+.dashboardPage.App__header {
+  background-image: url('../../image/dashboard-header-background.png');
 }

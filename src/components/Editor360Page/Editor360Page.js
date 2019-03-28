@@ -62,7 +62,7 @@ const Editor360Page = () => {
       ]
     },
     {
-      name: 'editor',
+      name: 'editor2',
       imageContainers: [
         {
           classes: [
@@ -94,7 +94,7 @@ const Editor360Page = () => {
       ]
     },
     {
-      name: 'editor',
+      name: 'editor3',
       imageContainers: [
         {
           classes: [

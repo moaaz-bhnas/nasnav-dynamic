@@ -79,7 +79,7 @@ const FeatureSection = () => {
   ];
 
   return (
-    <section className="FeatureSection" role="region" aria-labelledby="featureSection__title">
+    <section className="featureSection" role="region" aria-labelledby="featureSection__title">
       <div className="container">
         <h2 className="featureSection__title" id="featureSection__title">Features</h2>
         <ul className="list featureList">

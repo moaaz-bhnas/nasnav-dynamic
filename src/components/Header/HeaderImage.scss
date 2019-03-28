@@ -179,3 +179,27 @@ Shopping Page
     }
   }
 }
+
+/* ===========================================
+Dashboard
+============================================== */
+.dashboardPage {
+  .header__imageContainer {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  .header__image {
+    width: 100%;
+    max-width: 30.4rem;
+
+    @media screen and (min-width: $break-xlarge) {
+      width: 150%;
+      max-width: initial;
+      position: absolute;
+      left: -6rem;
+      top: -2rem;
+    }
+  }
+}

@@ -10,11 +10,6 @@
 /* service item --- */
 .serviceList__item {
   margin-bottom: 5rem;
-  &::after {
-    content: '';
-    display: block;
-    clear: both;
-  }
 }
 
 /* ================================
@@ -39,22 +34,22 @@ NavStyle
 }
 
 /* ================================
-NavStyle 
+Shoppinh 
 =================================== */
 .shopping__serviceSection {
   margin: 7rem 0;
 }
 
 /* ================================
-NavStyle 
-=================================== */
-.shopping__serviceSection {
-  margin: 7rem 0;
-}
-
-/* ================================
-NavStyle 
+360 Editor 
 =================================== */
 .editor360__serviceSection {
+  margin: 7rem 0;
+}
+
+/* ================================
+Dashboard
+=================================== */
+.dashboard__serviceSection {
   margin: 7rem 0;
 }

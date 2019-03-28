@@ -14,6 +14,7 @@ import NavboxPage from './NavboxPage/NavboxPage';
 import NavstylePage from './NavstylePage/NavstylePage';
 import ShoppingPage from './ShoppingPage/ShoppingPage';
 import Editor360Page from './Editor360Page/Editor360Page';
+import DashboardPage from './DashboardPage/DashboardPage';
 
 class App extends Component {
   render() {
@@ -26,6 +27,7 @@ class App extends Component {
             <Route path="/navstyle" component={NavstylePage} />
             <Route path="/shopping" component={ShoppingPage} />
             <Route path="/360editor" component={Editor360Page} />
+            <Route path="/dashboard" component={DashboardPage} />
           </Switch>
           <CountrySection />
           <Footer />

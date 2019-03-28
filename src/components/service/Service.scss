@@ -2,6 +2,14 @@
 @import '../../sass-modules/breakpoints';
 @import '../../sass-modules/lengths';
 
+.service {
+  &::after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+
 /* item --- */
 .stepList__step {
   margin: 1.5rem 0;
@@ -331,3 +339,20 @@ Dashboard
   }
 }
 
+.dashboard2 {
+  @media screen and (min-width: $break-service) {
+    padding-bottom: 5rem;
+  }
+}
+
+.dashboard3 {
+  .service__image {
+    width: 100%;
+    max-width: $service_image_max-width;
+
+    @media screen and (min-width: $break-service) {
+      width: 120%;
+      max-width: initial;
+    }
+  }
+}

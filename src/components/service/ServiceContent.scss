@@ -19,6 +19,11 @@ Service Content
     width: 40%;
   }
 }
+.service__content_widthOnlargeScreen_45 {
+  @media screen and (min-width: $break-service) {
+    width: 45%;
+  }
+}
 .service__content_widthOnlargeScreen_overHalf {
   @media screen and (min-width: $break-service) {
     width: 60%;

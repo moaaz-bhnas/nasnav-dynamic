@@ -1,6 +1,7 @@
 .thriller__paragraph {
   &:first-child {
-    margin: 0;
+    margin-top: 0;
+    margin-bottom: 0;
   }
   &:nth-child(3) {
     margin-left: auto;
